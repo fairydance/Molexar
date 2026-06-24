@@ -1,0 +1,797 @@
+{
+  "version": "1.0",
+  "truncation": null,
+  "padding": null,
+  "added_tokens": [
+    {
+      "id": 0,
+      "content": "<PAD>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 1,
+      "content": "<BOS>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 2,
+      "content": "<EOS>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 3,
+      "content": "<UNK>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 4,
+      "content": "<SEP>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 5,
+      "content": "<MASK>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 6,
+      "content": "<COND>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 7,
+      "content": "</COND>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 8,
+      "content": "<MOL>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 9,
+      "content": "</MOL>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 10,
+      "content": "<MOL_HAC>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 11,
+      "content": "<MOL_HBDC>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 12,
+      "content": "<MOL_HBAC>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 13,
+      "content": "<MOL_ROTBC>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 14,
+      "content": "<MOL_WT>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 15,
+      "content": "<MOL_LOGP>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 16,
+      "content": "<MOL_TPSA>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 17,
+      "content": "<MOL_QED>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 18,
+      "content": "<MOL_SAS>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 19,
+      "content": "<MOL_PHARMA_FP>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 20,
+      "content": "<PROT_SEQ_ESM_EMB>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 21,
+      "content": "<PROT_POC_GVP_EMB>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 22,
+      "content": "<VALUE>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 23,
+      "content": "<UNUSED0>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 24,
+      "content": "<UNUSED1>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 25,
+      "content": "<UNUSED2>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 26,
+      "content": "<UNUSED3>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 27,
+      "content": "<UNUSED4>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 28,
+      "content": "<UNUSED5>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 29,
+      "content": "<UNUSED6>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 30,
+      "content": "<UNUSED7>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 31,
+      "content": "<UNUSED8>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 32,
+      "content": "<UNUSED9>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    }
+  ],
+  "normalizer": {
+    "type": "Sequence",
+    "normalizers": [
+      {
+        "type": "Strip",
+        "strip_left": true,
+        "strip_right": true
+      }
+    ]
+  },
+  "pre_tokenizer": {
+    "type": "Split",
+    "pattern": {
+      "Regex": "(\\[[^\\]]+\\]|</?[^>]+>)"
+    },
+    "behavior": "Isolated",
+    "invert": false
+  },
+  "post_processor": {
+    "type": "TemplateProcessing",
+    "single": [
+      {
+        "SpecialToken": {
+          "id": "<BOS>",
+          "type_id": 0
+        }
+      },
+      {
+        "Sequence": {
+          "id": "A",
+          "type_id": 0
+        }
+      },
+      {
+        "SpecialToken": {
+          "id": "<EOS>",
+          "type_id": 0
+        }
+      }
+    ],
+    "pair": [
+      {
+        "Sequence": {
+          "id": "A",
+          "type_id": 0
+        }
+      },
+      {
+        "Sequence": {
+          "id": "B",
+          "type_id": 1
+        }
+      }
+    ],
+    "special_tokens": {
+      "</COND>": {
+        "id": "</COND>",
+        "ids": [
+          7
+        ],
+        "tokens": [
+          "</COND>"
+        ]
+      },
+      "</MOL>": {
+        "id": "</MOL>",
+        "ids": [
+          9
+        ],
+        "tokens": [
+          "</MOL>"
+        ]
+      },
+      "<BOS>": {
+        "id": "<BOS>",
+        "ids": [
+          1
+        ],
+        "tokens": [
+          "<BOS>"
+        ]
+      },
+      "<COND>": {
+        "id": "<COND>",
+        "ids": [
+          6
+        ],
+        "tokens": [
+          "<COND>"
+        ]
+      },
+      "<EOS>": {
+        "id": "<EOS>",
+        "ids": [
+          2
+        ],
+        "tokens": [
+          "<EOS>"
+        ]
+      },
+      "<MASK>": {
+        "id": "<MASK>",
+        "ids": [
+          5
+        ],
+        "tokens": [
+          "<MASK>"
+        ]
+      },
+      "<MOL>": {
+        "id": "<MOL>",
+        "ids": [
+          8
+        ],
+        "tokens": [
+          "<MOL>"
+        ]
+      },
+      "<MOL_HAC>": {
+        "id": "<MOL_HAC>",
+        "ids": [
+          10
+        ],
+        "tokens": [
+          "<MOL_HAC>"
+        ]
+      },
+      "<MOL_HBAC>": {
+        "id": "<MOL_HBAC>",
+        "ids": [
+          12
+        ],
+        "tokens": [
+          "<MOL_HBAC>"
+        ]
+      },
+      "<MOL_HBDC>": {
+        "id": "<MOL_HBDC>",
+        "ids": [
+          11
+        ],
+        "tokens": [
+          "<MOL_HBDC>"
+        ]
+      },
+      "<MOL_LOGP>": {
+        "id": "<MOL_LOGP>",
+        "ids": [
+          15
+        ],
+        "tokens": [
+          "<MOL_LOGP>"
+        ]
+      },
+      "<MOL_PHARMA_FP>": {
+        "id": "<MOL_PHARMA_FP>",
+        "ids": [
+          19
+        ],
+        "tokens": [
+          "<MOL_PHARMA_FP>"
+        ]
+      },
+      "<MOL_QED>": {
+        "id": "<MOL_QED>",
+        "ids": [
+          17
+        ],
+        "tokens": [
+          "<MOL_QED>"
+        ]
+      },
+      "<MOL_ROTBC>": {
+        "id": "<MOL_ROTBC>",
+        "ids": [
+          13
+        ],
+        "tokens": [
+          "<MOL_ROTBC>"
+        ]
+      },
+      "<MOL_SAS>": {
+        "id": "<MOL_SAS>",
+        "ids": [
+          18
+        ],
+        "tokens": [
+          "<MOL_SAS>"
+        ]
+      },
+      "<MOL_TPSA>": {
+        "id": "<MOL_TPSA>",
+        "ids": [
+          16
+        ],
+        "tokens": [
+          "<MOL_TPSA>"
+        ]
+      },
+      "<MOL_WT>": {
+        "id": "<MOL_WT>",
+        "ids": [
+          14
+        ],
+        "tokens": [
+          "<MOL_WT>"
+        ]
+      },
+      "<PAD>": {
+        "id": "<PAD>",
+        "ids": [
+          0
+        ],
+        "tokens": [
+          "<PAD>"
+        ]
+      },
+      "<PROT_POC_GVP_EMB>": {
+        "id": "<PROT_POC_GVP_EMB>",
+        "ids": [
+          21
+        ],
+        "tokens": [
+          "<PROT_POC_GVP_EMB>"
+        ]
+      },
+      "<PROT_SEQ_ESM_EMB>": {
+        "id": "<PROT_SEQ_ESM_EMB>",
+        "ids": [
+          20
+        ],
+        "tokens": [
+          "<PROT_SEQ_ESM_EMB>"
+        ]
+      },
+      "<SEP>": {
+        "id": "<SEP>",
+        "ids": [
+          4
+        ],
+        "tokens": [
+          "<SEP>"
+        ]
+      },
+      "<UNK>": {
+        "id": "<UNK>",
+        "ids": [
+          3
+        ],
+        "tokens": [
+          "<UNK>"
+        ]
+      },
+      "<UNUSED0>": {
+        "id": "<UNUSED0>",
+        "ids": [
+          23
+        ],
+        "tokens": [
+          "<UNUSED0>"
+        ]
+      },
+      "<UNUSED1>": {
+        "id": "<UNUSED1>",
+        "ids": [
+          24
+        ],
+        "tokens": [
+          "<UNUSED1>"
+        ]
+      },
+      "<UNUSED2>": {
+        "id": "<UNUSED2>",
+        "ids": [
+          25
+        ],
+        "tokens": [
+          "<UNUSED2>"
+        ]
+      },
+      "<UNUSED3>": {
+        "id": "<UNUSED3>",
+        "ids": [
+          26
+        ],
+        "tokens": [
+          "<UNUSED3>"
+        ]
+      },
+      "<UNUSED4>": {
+        "id": "<UNUSED4>",
+        "ids": [
+          27
+        ],
+        "tokens": [
+          "<UNUSED4>"
+        ]
+      },
+      "<UNUSED5>": {
+        "id": "<UNUSED5>",
+        "ids": [
+          28
+        ],
+        "tokens": [
+          "<UNUSED5>"
+        ]
+      },
+      "<UNUSED6>": {
+        "id": "<UNUSED6>",
+        "ids": [
+          29
+        ],
+        "tokens": [
+          "<UNUSED6>"
+        ]
+      },
+      "<UNUSED7>": {
+        "id": "<UNUSED7>",
+        "ids": [
+          30
+        ],
+        "tokens": [
+          "<UNUSED7>"
+        ]
+      },
+      "<UNUSED8>": {
+        "id": "<UNUSED8>",
+        "ids": [
+          31
+        ],
+        "tokens": [
+          "<UNUSED8>"
+        ]
+      },
+      "<UNUSED9>": {
+        "id": "<UNUSED9>",
+        "ids": [
+          32
+        ],
+        "tokens": [
+          "<UNUSED9>"
+        ]
+      },
+      "<VALUE>": {
+        "id": "<VALUE>",
+        "ids": [
+          22
+        ],
+        "tokens": [
+          "<VALUE>"
+        ]
+      }
+    }
+  },
+  "decoder": {
+    "type": "ByteLevel",
+    "add_prefix_space": true,
+    "trim_offsets": true,
+    "use_regex": true
+  },
+  "model": {
+    "type": "WordLevel",
+    "vocab": {
+      "<PAD>": 0,
+      "<BOS>": 1,
+      "<EOS>": 2,
+      "<UNK>": 3,
+      "<SEP>": 4,
+      "<MASK>": 5,
+      "<COND>": 6,
+      "</COND>": 7,
+      "<MOL>": 8,
+      "</MOL>": 9,
+      "<MOL_HAC>": 10,
+      "<MOL_HBDC>": 11,
+      "<MOL_HBAC>": 12,
+      "<MOL_ROTBC>": 13,
+      "<MOL_WT>": 14,
+      "<MOL_LOGP>": 15,
+      "<MOL_TPSA>": 16,
+      "<MOL_QED>": 17,
+      "<MOL_SAS>": 18,
+      "<MOL_PHARMA_FP>": 19,
+      "<PROT_SEQ_ESM_EMB>": 20,
+      "<PROT_POC_GVP_EMB>": 21,
+      "<VALUE>": 22,
+      "<UNUSED0>": 23,
+      "<UNUSED1>": 24,
+      "<UNUSED2>": 25,
+      "<UNUSED3>": 26,
+      "<UNUSED4>": 27,
+      "<UNUSED5>": 28,
+      "<UNUSED6>": 29,
+      "<UNUSED7>": 30,
+      "<UNUSED8>": 31,
+      "<UNUSED9>": 32,
+      "[C]": 33,
+      "[Dummy]": 34,
+      "[Branch1]": 35,
+      "[pop]": 36,
+      "[=C]": 37,
+      "[Ring1]": 38,
+      "[Frag@0]": 39,
+      "[Attach:0]": 40,
+      "[CH0]": 41,
+      "[Attach:1]": 42,
+      "[=Branch1]": 43,
+      "[=CH0]": 44,
+      "[Frag]": 45,
+      "[N]": 46,
+      "[O]": 47,
+      "[CH2]": 48,
+      "[Frag@1]": 49,
+      "[#Branch1]": 50,
+      "[NH0]": 51,
+      "[Branch2]": 52,
+      "[=O]": 53,
+      "[CH1]": 54,
+      "[=N]": 55,
+      "[NH1]": 56,
+      "[OH0]": 57,
+      "[F]": 58,
+      "[=Branch2]": 59,
+      "[=Ring1]": 60,
+      "[S]": 61,
+      "[#Branch2]": 62,
+      "[Cl]": 63,
+      "[Attach:2]": 64,
+      "[Ring2]": 65,
+      "[SH0]": 66,
+      "[Br]": 67,
+      "[Frag@2]": 68,
+      "[#N]": 69,
+      "[#C]": 70,
+      "[=Dummy]": 71,
+      "[=SH0]": 72,
+      "[P]": 73,
+      "[=S]": 74,
+      "[Attach:3]": 75,
+      "[Frag@3]": 76,
+      "[NH1+1]": 77,
+      "[O-1]": 78,
+      "[=Ring2]": 79,
+      "[=NH1+1]": 80,
+      "[NH2+1]": 81,
+      "[Attach:4]": 82,
+      "[NH3+1]": 83,
+      "[#NH1+1]": 84,
+      "[N-1]": 85,
+      "[=NH2+1]": 86,
+      "[Frag@4]": 87,
+      "[Attach:5]": 88,
+      "[NH1-1]": 89,
+      "[PH1]": 90,
+      "[N+1]": 91,
+      "[#N+1]": 92,
+      "[#Ring1]": 93,
+      "[=P]": 94,
+      "[Frag@5]": 95,
+      "[=N+1]": 96,
+      "[#S]": 97,
+      "[Attach:6]": 98,
+      "[#SH0]": 99,
+      "[Attach:7]": 100,
+      "[P-1]": 101,
+      "[SH2]": 102,
+      "[Xe]": 103,
+      "[Frag@6]": 104,
+      "[=SH2]": 105,
+      "[XeH1]": 106,
+      "[=N-1]": 107,
+      "[#Ring2]": 108,
+      "[B]": 109,
+      "[=B]": 110,
+      "[Attach:8]": 111,
+      "[SH4]": 112,
+      "[Frag@7]": 113,
+      "[SH3]": 114,
+      "[Attach:9]": 115,
+      "[B+1]": 116,
+      "[=SH4]": 117,
+      "[Attach:10]": 118,
+      "[Attach:11]": 119,
+      "[Frag@8]": 120,
+      "[SH5]": 121,
+      "[Xe+1]": 122,
+      "[Frag@10]": 123,
+      "[Frag@9]": 124,
+      "[=XeH1]": 125,
+      "[=Xe]": 126
+    },
+    "unk_token": "<UNK>"
+  }
+}

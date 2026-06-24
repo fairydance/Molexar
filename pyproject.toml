@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "molexar"
+version = "1.0.0"
+description = "Molecular Exalted Architect"
+requires-python = ">=3.10"
+authors = [
+  { name = "Haoyu Lin" }
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
