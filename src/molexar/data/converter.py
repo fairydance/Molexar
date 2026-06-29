@@ -10,8 +10,8 @@ try:
     from fragment_selfies.tokens import split_tokens
 except ImportError as exc:  # pragma: no cover - exercised by CLI users without dependency
     raise ImportError(
-        "Fragment-SELFIES is required. Install the local Fragment-SELFIES package "
-        "into this environment before using Molexar conversion utilities."
+        "Fragment-SELFIES is required. Install it with `pip install fragment-selfies` "
+        "before using Molexar conversion utilities."
     ) from exc
 
 

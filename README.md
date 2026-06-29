@@ -2,7 +2,7 @@
 
 Molexar is a unified multimodal molecular foundation model for drug design that supports unconditional generation and multi-condition generation, including molecular-property conditioning, molecular-pharmacophore conditioning, protein-sequence conditioning, and protein-pocket conditioning, while also accommodating arbitrary custom conditions.
 
-![Molexar architecture](images/molexar_architecture.png)
+![Molexar architecture](https://raw.githubusercontent.com/fairydance/Molexar/main/images/molexar_architecture.png)
 
 ## Resources
 
@@ -25,24 +25,18 @@ Molexar is a unified multimodal molecular foundation model for drug design that 
 
 ```bash
 git clone https://github.com/fairydance/Molexar.git
-git clone https://github.com/fairydance/Fragment-SELFIES.git
-
 cd Molexar
 
 conda create -n molexar python=3.13
 conda activate molexar
 
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130
-pip install transformers accelerate datasets evaluate biopython loguru
-conda install -c conda-forge rdkit scipy seaborn
-
-python -m pip install -e ../Fragment-SELFIES
-python -m pip install -e . --no-deps
+python -m pip install -e ".[train,data]"
 
 python -c "import fragment_selfies; import molexar; print('Molexar environment ready')"
 ```
 
-[Fragment-SELFIES](https://github.com/fairydance/Fragment-SELFIES) is required for SMILES conversion and generated molecule decoding. Install Molexar in editable mode in every environment that runs training, inference, or auxiliary embedding scripts.
+[Fragment-SELFIES](https://github.com/fairydance/Fragment-SELFIES) is required for SMILES conversion and generated molecule decoding. Molexar depends on the published `fragment-selfies` package, so `pip install -e .` installs it automatically from PyPI. Install Molexar in editable mode in every environment that runs training, inference, or auxiliary embedding scripts.
 
 ## Repository Layout
 
@@ -124,6 +118,20 @@ Conditional generation accepts JSON, NPY, PKL, direct scalar flags, reference SM
 - `docs/data_preparation.md` - expected input file formats
 - `docs/training.md` - pretraining and SFT commands
 - `docs/inference.md` - base and conditional generation examples
+
+## Citation
+
+```bibtex
+@misc{lin2026molexarunifiedmultimodalmolecular,
+      title={Molexar: A Unified Multimodal Molecular Foundation Model for Drug Design},
+      author={Haoyu Lin and Yiyan Liao and Jinmei Pan and Xinliao Ling and Luhua Lai and Jianfeng Pei},
+      year={2026},
+      eprint={2606.25865},
+      archivePrefix={arXiv},
+      primaryClass={q-bio.BM},
+      url={https://arxiv.org/abs/2606.25865},
+}
+```
 
 ## License
 

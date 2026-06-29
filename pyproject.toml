@@ -1,15 +1,77 @@
 [build-system]
-requires = ["setuptools>=64", "wheel"]
+requires = ["setuptools>=77.0.3"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "molexar"
 version = "1.0.0"
-description = "Molecular Exalted Architect"
-requires-python = ">=3.10"
+description = "Unified multimodal molecular foundation model for drug design."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [
   { name = "Haoyu Lin" }
 ]
+keywords = [
+  "cheminformatics",
+  "drug-design",
+  "fragment-selfies",
+  "molecular-generation",
+  "multimodal-learning",
+  "protein-ligand"
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+  "Topic :: Scientific/Engineering :: Chemistry"
+]
+dependencies = [
+  "fragment-selfies>=1.0.0",
+  "loguru>=0.7.3",
+  "numpy>=2.4.4",
+  "rdkit>=2025.09.6",
+  "scipy>=1.17.1",
+  "tokenizers>=0.22.2",
+  "torch>=2.9.1",
+  "transformers>=5.8.0"
+]
+
+[project.optional-dependencies]
+train = ["accelerate>=1.13.0"]
+data = [
+  "pandas>=3.0.2",
+  "tqdm>=4.67.3"
+]
+plot = [
+  "cairosvg>=2.9.0",
+  "cycler>=0.12.1",
+  "matplotlib>=3.10.8",
+  "seaborn>=0.13.2"
+]
+test = ["pytest>=9.0.3"]
+dev = [
+  "build>=1.0.0",
+  "twine>=5.0.0"
+]
+
+[project.urls]
+Homepage = "https://molexar.com"
+Repository = "https://github.com/fairydance/Molexar"
+Issues = "https://github.com/fairydance/Molexar/issues"
+Models = "https://huggingface.co/fairydance"
+Paper = "https://arxiv.org/abs/2606.25865"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
+include = ["molexar*"]

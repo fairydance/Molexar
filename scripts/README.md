@@ -16,7 +16,7 @@ Utility scripts are grouped by purpose:
 Install Molexar in editable mode before running scripts:
 
 ```bash
-python -m pip install -e /path/to/Molexar --no-deps
+python -m pip install -e "/path/to/Molexar[train,data]"
 python scripts/run_training.py --help
 python scripts/run_inference.py --help
 ```
