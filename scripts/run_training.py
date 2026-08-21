@@ -299,11 +299,6 @@ def main():
         config = MolexarConfig.from_pretrained(args.base_model)
     else:
         config = MolexarConfig()
-    if args.task == "sft" and args.sft_mode in {"protein_pocket", "universal_multi"}:
-        node_scalar_dim, node_vector_dim = config.gvp_node_in_dim
-        if node_scalar_dim == 6:
-            config.gvp_node_in_dim = (11, node_vector_dim)
-            logger.info("Using 11 scalar pocket atom features for GVP input")
     config.max_position_embeddings = args.max_sequence_length
     config.sliding_window = args.max_sequence_length // 2
 

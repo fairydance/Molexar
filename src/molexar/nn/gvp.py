@@ -367,7 +367,7 @@ class GVPEncoder(nn.Module):
     """
     
     def __init__(self,
-                 node_in_dim: Tuple[int, int] = (6, 3),
+                 node_in_dim: Tuple[int, int] = (11, 3),
                  edge_in_dim: Tuple[int, int] = (32, 1),
                  node_h_dim: Tuple[int, int] = (256, 16),
                  edge_h_dim: Tuple[int, int] = (32, 1),
@@ -435,7 +435,6 @@ class GVPEncoder(nn.Module):
             out = pooled / count
         
         return out
-
 
 
 
