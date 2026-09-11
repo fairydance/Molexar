@@ -9,8 +9,8 @@ Molexar is a unified multimodal molecular foundation model for drug design that 
 - Official website: https://molexar.com
 - Molexar source code: https://github.com/fairydance/Molexar
 - Fragment-SELFIES source code: https://github.com/fairydance/Fragment-SELFIES
-- Unconditional base model: https://huggingface.co/fairydance/molexar-10m-base
-- Universal multi-condition model: https://huggingface.co/fairydance/molexar-10m-omni
+- Unconditional base model: https://huggingface.co/fairydance/molexar-1-10m-pt
+- Universal multi-condition model: https://huggingface.co/fairydance/molexar-1-10m-it
 
 ## Features
 
@@ -51,12 +51,12 @@ Molexar/
 └── src/molexar/              # package source
 ```
 
-Datasets are not included in this repository. Released model files are hosted on Hugging Face at [`fairydance/molexar-10m-base`](https://huggingface.co/fairydance/molexar-10m-base) and [`fairydance/molexar-10m-omni`](https://huggingface.co/fairydance/molexar-10m-omni). Pass local dataset and model paths explicitly through CLI flags or environment variables.
+Datasets are not included in this repository. Released model files are hosted on Hugging Face at [`fairydance/molexar-1-10m-pt`](https://huggingface.co/fairydance/molexar-1-10m-pt) and [`fairydance/molexar-1-10m-it`](https://huggingface.co/fairydance/molexar-1-10m-it). Pass local dataset and model paths explicitly through CLI flags or environment variables.
 
 ## Released Models
 
-- [`fairydance/molexar-10m-base`](https://huggingface.co/fairydance/molexar-10m-base) - unconditional base model for de novo and fragment-constrained generation
-- [`fairydance/molexar-10m-omni`](https://huggingface.co/fairydance/molexar-10m-omni) - universal multi-condition model for molecular-property, pharmacophore, protein-sequence, and protein-pocket conditioning
+- [`fairydance/molexar-1-10m-pt`](https://huggingface.co/fairydance/molexar-1-10m-pt) - unconditional base model for de novo and fragment-constrained generation
+- [`fairydance/molexar-1-10m-it`](https://huggingface.co/fairydance/molexar-1-10m-it) - universal multi-condition model for molecular-property, pharmacophore, protein-sequence, and protein-pocket conditioning
 
 ## Base Pretraining
 
